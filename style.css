@@ -1,0 +1,364 @@
+:root {
+  --primary-color: #004b66;
+  --secondary-color: #5dadc9;
+  --light-gray: #e6e7e8;
+  --light-text: #fff;
+  --font: Arial, "sans-serif";
+}
+
+/* Reset CSS Padrão */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Genéricos */
+
+.wrapper {
+  height: 100vh;
+  overflow: auto;
+  font-family: var(--font);
+}
+
+main {
+  padding: 60px;
+}
+
+/* Header */
+
+.wrapper header {
+  position: relative;
+  background-color: var(--light-gray);
+}
+
+.wrapper header .logo {
+  position: absolute;
+  left: 60px;
+  padding: 30px;
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 230px;
+}
+
+.wrapper header .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper header .menu div:first-child {
+  display: flex;
+  justify-content: right;
+  padding: 30px 60px;
+}
+
+.wrapper header .menu div:first-child h1 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  /*letter-spacing: 2px;*/
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.wrapper header .menu nav {
+  background-color: var(--primary-color);
+  padding: 15px 60px;
+}
+
+.wrapper header .menu nav ul {
+  list-style: none;
+  display: flex;
+  grid-gap: 15px;
+  justify-content: right;
+}
+
+.wrapper header .menu nav ul li a {
+  color: var(--light-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  transform: 0.6s;
+}
+
+.wrapper header .menu nav ul li a:hover {
+  color: var(--light-text);
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  /*grid-template-columns: 40vw 1fr;
+  grid-gap: 60px;*/
+  margin-top: 60px;
+}
+
+.hero p {
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.hero p strong {
+  color: var(--secondary-color);
+}
+
+.segments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.segments i {
+  text-align: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  width: 100%;
+}
+
+.segments h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.segments p {
+  text-align: center;
+  line-height: 150%;
+}
+
+.systems-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.systems-info h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.systems-info h3 {
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.systems-info p {
+  line-height: 150%;
+}
+
+.systems-info ul {
+  display: grid;
+  gap: 10px;
+  list-style: circle;
+}
+
+.services h2 {
+  padding: 40px 40px 20px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  font-size: 40px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.services .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.services h4 {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.services .cols ul {
+  display: grid;
+  gap: 10px;
+  list-style: circle;
+}
+
+.services .col-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.services .logo-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.contact .cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.contact h2 {
+  padding: 40px 40px 20px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  font-size: 40px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.contact h4 {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 150%;
+  text-align: justify;
+}
+
+ul li {
+  text-align: justify;
+  line-height: 150%;
+}
+
+.contact-form {
+}
+
+.contact-form div {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form div label {
+  color: var(--primary-color);
+}
+
+.contact-form div input,
+.contact-form div textarea {
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.burger,
+nav.mobile{display: none;}
+.drawer{
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0,75,102,0.95);
+    height: 100vh;
+    width: 50vw;
+    right: 0vw;
+    padding: 20px;
+    display: none;
+}
+
+.drawer ul li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .segments,
+    .systems-info,
+    .services .cols,
+    .contact .cols{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .services .logo-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+}
+
+@media only screen and (max-width: 800px) {
+    nav.full{
+        display: none !important;
+    }
+
+    nav.mobile{
+        display: flex;
+        justify-content: right;
+    }
+
+    .burger, .close{
+        display: grid;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border:none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .slogan{
+        display: none;
+    }
+}
