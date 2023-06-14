@@ -420,7 +420,8 @@ nav.mobile{display: none;}
     .segments,
     .systems-info,
     .services .cols,
-    .contact .cols{
+    .contact .cols,
+    .hero{
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -430,6 +431,11 @@ nav.mobile{display: none;}
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         margin-top: 30px;
+      }
+
+      .hero{
+        display: block;
+        overflow: auto;
       }
 
 }
