@@ -134,6 +134,10 @@ main {
   overflow: hidden;
 }
 
+.hero div.text{
+  height: auto;
+}
+
 .hero p {
   line-height: 150%;
   margin-bottom: 20px;
@@ -378,9 +382,9 @@ nav.mobile{display: none;}
   position: absolute;
   bottom: 50px;
   left:50px;
-  width: 40%;
+  width: 70%;
   color: #fff;
-  height: 170px;
+
 }
 
 .text-layer-slide h3{
@@ -392,10 +396,20 @@ nav.mobile{display: none;}
 
 .owl-carousel{
   position: relative;
+  display: block;
 }
+
+.slider{
+  height: 300px;
+  background-size: cover;
+}
+
 .owl-nav{
   font-size: 30px !important;
-  color:var(--primary-color);
+  color:#fff;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 .owl-dots{
   display: none;

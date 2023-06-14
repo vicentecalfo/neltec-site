@@ -85,7 +85,7 @@
       </header>
       <main>
         <section class="hero" id="empresa">
-          <div>
+          <div class="text">
             <p>
               A <strong>Neltec</strong> é uma empresa jovem fundada em 2021, com
               o objetivo de fornecer serviços e soluções diferenciadas a nossos
@@ -101,26 +101,25 @@
           </div>
          
             <div class="owl-carousel">
-              <div>
-                <img src="img/slide1.jpg" alt="">
+              <div class="slider" style="background: url(img/slide1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>MISSÃO</h3>
                   Fornecer produtos, serviços e soluções que possam agregar valor e contribuir para a melhoria dos processos e tomadas de decisões de nossos clientes.  
                 </div>
               </div>
-              <div>
+              <div class="slider" style="background: url(img/slide2-1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>VISÃO</h3>
                   Ser uma empresa de referência no mercado, através da qualidade de nosso produto e serviços além do comprometimento por parte dos nossos colaboradores. 
                 </div>
-                <img src="img/slide2-1.jpg" alt="">
+               
               </div>
-              <div>
+              <div class="slider" style="background: url(img/slide3-1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>VALORES</h3>
                   Comprometimento, Excelência, Integridade, Honestidade, Superação e Inovação. 
                 </div>
-                <img src="img/slide3-1.jpg" alt=""></div>
+                </div>
             </div>
           
         </section>
@@ -360,7 +359,8 @@
           lazyLoadEager: 1,
           lazyLoad:true,
           slideBy: 1,
-          margin: 0
+          margin: 0,
+          responsiveClass:true,
         });
       });
     </script>
