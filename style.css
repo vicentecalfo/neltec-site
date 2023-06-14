@@ -126,9 +126,12 @@ main {
 
 .hero {
   display: grid;
-  /*grid-template-columns: 40vw 1fr;
-  grid-gap: 60px;*/
-  margin-top: 60px;
+  grid-template-columns: 40vw 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero p {
@@ -317,9 +320,13 @@ nav.mobile{display: none;}
 
 .screenshot{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     padding: 50px 0px;
+}
+
+.screenshot div{
+  cursor: pointer;
 }
 
 .img-overlay{
@@ -364,6 +371,33 @@ nav.mobile{display: none;}
 
 .img-overlay .img img{
     max-height: 90vh;
+}
+
+
+.text-layer-slide{
+  position: absolute;
+  bottom: 50px;
+  left:50px;
+  width: 40%;
+  color: #fff;
+}
+
+.text-layer-slide h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.owl-carousel{
+  position: relative;
+}
+.owl-nav{
+  font-size: 30px !important;
+  color:var(--primary-color);
+}
+.owl-dots{
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
