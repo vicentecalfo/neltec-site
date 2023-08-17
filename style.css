@@ -66,8 +66,10 @@ main {
 /* Header */
 
 .wrapper header {
-  position: relative;
+  position:sticky;
   background-color: var(--light-gray);
+  top:0;
+  z-index: 999;
 }
 
 .wrapper header .logo {
@@ -330,7 +332,7 @@ nav.mobile{display: none;}
 }
 
 .screenshot div{
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 .img-overlay{
@@ -479,3 +481,20 @@ nav.mobile{display: none;}
         max-height: 80vh;
     }
 }
+.formata-borda {
+  padding: 50px;
+}
+.fundo-image {
+  background-image: url('img/fundo1.jpg');
+  color: white;
+}
+#sistema ul {
+  list-style: none;
+}
+
+#sistema ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f14a';
+  color: #5dadc9;
+}
+

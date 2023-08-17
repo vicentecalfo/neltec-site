@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neltec Consultoria de Materiais</title>
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="js/slider/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="js/slider/assets/owl.theme.default.min.css" />
@@ -15,12 +16,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="http://www.neltec.com.br/teste/favicon.ico"
       type="image/x-icon"
     />
-    <!-- <script src="https://kit.fontawesome.com/17044c3c3b.js" crossorigin="anonymous"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slider/owl.carousel.min.js"></script>
   </head>
 
   <body>
@@ -51,7 +58,7 @@
       <header>
         <div class="logo">
           <img
-            src="/img/logo.png"
+            src="./img/logo.png"
             alt="Marca da Neltec Consultoria de Materiais"
           />
         </div>
@@ -100,21 +107,21 @@
             </p>
           </div>
          
-            <div class="owl-carousel">
-              <div class="slider" style="background: url(img/slide1.jpg) no-repeat center center;">
+            <div class="owl-carousel owl-theme">
+              <div class="slider item" style="background: url(img/slide1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>MISSÃO</h3>
                   Fornecer produtos, serviços e soluções que possam agregar valor e contribuir para a melhoria dos processos e tomadas de decisões de nossos clientes.  
                 </div>
               </div>
-              <div class="slider" style="background: url(img/slide2-1.jpg) no-repeat center center;">
+              <div class="slider item" style="background: url(img/slide2-1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>VISÃO</h3>
                   Ser uma empresa de referência no mercado, através da qualidade de nosso produto e serviços além do comprometimento por parte dos nossos colaboradores. 
                 </div>
                
               </div>
-              <div class="slider" style="background: url(img/slide3-1.jpg) no-repeat center center;">
+              <div class="slider item" style="background: url(img/slide3-1.jpg) no-repeat center center;">
                 <div class="text-layer-slide">
                   <h3>VALORES</h3>
                   Comprometimento, Excelência, Integridade, Honestidade, Superação e Inovação. 
@@ -141,8 +148,8 @@
             </p>
           </div>
         </section>
-        <section class="systems-info">
-          <div>
+        <section class="systems-info fundo-image">
+          <div class="formata-borda">
             <h3>Características do SISNEL</h3>
             <ul>
               <li>
@@ -167,9 +174,10 @@
               <li>Criticidade do Material / Tipos de Inspeções</li>
             </ul>
           </div>
+       
           <div id="sistema">
             <h2>Sistema</h2>
-            <p>
+            <p style="padding-right: 20px;">
               Nosso software Sisnel® utiliza o padrão de classificação UNSPSC e
               tem condições de atender a todas as demandas de nossos clientes,
               com alto grau de flexibilização e customização.
@@ -181,7 +189,7 @@
                 através dos descritivos técnicos;
               </li>
 
-              <li>Pesquisa por semelhança;</li>
+              <li> Pesquisa por semelhança;</li>
               <li>
                 Cadastro de Fabricantes e Fornecedores dentro da sua legalidade;
               </li>
@@ -189,7 +197,7 @@
                 Gestão de Cadastros de Materiais / Serviços e de Cadastro
                 Fabricantes / Fornecedores;
               </li>
-              <li>Eliminação de Duplicidades e Itens obsoletos;</li>
+              <li> Eliminação de Duplicidades e Itens obsoletos;</li>
               <li>
                 Redução de Estoque (espaço físico) e consequentemente, Custos
                 com Armazenagem;
@@ -198,12 +206,12 @@
                 Controle dos materiais em estoque através do ressuprimento
                 automático;
               </li>
-              <li>Preservação de histórico de compras;</li>
+              <li> Preservação de histórico de compras;</li>
               <li>
                 Emissão de diferentes tipos de relatórios de controle,
                 facilitando a tomada de decisões;
               </li>
-              <li>Interface com diversos sistemas ERPs;</li>
+              <li> Interface com diversos sistemas ERPs;</li>
             </ul>
           </div>
         </section>
@@ -274,7 +282,7 @@
             fabricantes do mercado, a Neltec utiliza as soluções mais inovadoras
             para manter nossos clientes constantemente atualizados e seguindo as
             tendências de vários setores do Mercado. Além disso, a aplicação
-            exclusiva SISNEL® tem sua interface totalmente intuitiva. Repare!
+            exclusiva SISNEL® tem sua interface totalmente intuitiva. 
           </p>
           <!-- <ul class="logo-gallery">
             <li><img src="img/Microsoft-Logo.png" /></li>
@@ -308,6 +316,9 @@
             <div><img src="./img/Imagem7.png" class="btn-img" /></div>
           </section>
         </section>
+        <div class="img">
+          <img src="./img/fundo2.jpg" class="img-zoom" />
+        </div>
         <section class="contact" id="contato">
           <h2>Contato</h2>
           <div class="cols">
@@ -344,15 +355,15 @@
       </main>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/slider/owl.carousel.min.js"></script>
+    
     <script>
       $(document).ready(function () {
+        
         $(".owl-carousel").owlCarousel({
+          autoplay:true,
+          autoplayTimeout:2000,
+          autoplayHoverPause:true,
+
           items: 1,
           loop: true,
           nav: true,
@@ -361,8 +372,9 @@
           slideBy: 1,
           margin: 0,
           responsiveClass:true,
-          responsiveBaseElement: 'body'
+          responsiveBaseElement: 'body',
         });
+       
       });
     </script>
     <script>
