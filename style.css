@@ -505,3 +505,6 @@ nav.mobile{display: none;}
     content: '\f14a';
     color: #5dadc9;
 }
+
+.owl-prev { left: -20px; }
+.owl-next { right: -20px; }
