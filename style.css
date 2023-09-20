@@ -442,6 +442,10 @@ nav.mobile{display: none;}
         overflow: auto;
       }
 
+      .owl-nav {
+        top:0px;
+      }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -482,6 +486,7 @@ nav.mobile{display: none;}
     .img-overlay .img img{
         max-height: 80vh;
     }
+
 }
 .formata-borda {
   padding: 50px;
@@ -506,5 +511,3 @@ nav.mobile{display: none;}
     color: #5dadc9;
 }
 
-.owl-prev { left: -20px; }
-.owl-next { right: -20px; }
