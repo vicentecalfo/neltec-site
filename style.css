@@ -23,8 +23,8 @@ html {
 }
 
 #empresa { margin-top: -150px; padding-top: 200px; }
-#servicos { margin-top: -150px; padding-top: 150px; }
-#sistema { margin-top: -150px; padding-top: 150px; }
+#servicos { margin-top: -150px; padding-top: 100px; }
+#sistema { margin-top: -150px; padding-top: 180px; }
 #contato { margin-top: -150px; padding-top: 150px; }
 
 body,
@@ -446,6 +446,9 @@ nav.mobile{display: none;}
       .owl-nav {
         top:0px;
       }
+
+      #servicos { margin-top: -150px; padding-top: 150px; }
+      #sistema { margin-top: -150px; padding-top: 150px; }
 
 }
 
