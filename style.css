@@ -334,6 +334,13 @@ nav.mobile{display: none;}
     padding: 50px 0px;
 }
 
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 50px 0px;
+}
+
 .screenshot div{
   cursor: zoom-in;
 }
