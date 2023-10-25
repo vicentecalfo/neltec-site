@@ -25,7 +25,7 @@ html {
 #empresa { margin-top: -150px; padding-top: 200px; }
 #servicos { margin-top: -150px; padding-top: 110px; }
 #sistema { margin-top: -150px; padding-top: 160px; }
-#contato { margin-top: -150px; padding-top: 140px; padding-bottom: 180px; }
+#contato { margin-top: -150px; padding-top: 140px; padding-bottom: 40px; }
 
 .btn-img {
   height:655.703px;
@@ -256,12 +256,12 @@ main {
 .services .logo-gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
+  gap: 0px;
 }
 
 .contact .cols {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows:1fr;
   gap: 40px;
 }
 
@@ -277,6 +277,11 @@ main {
   color: var(--primary-color);
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.contact p {
+  line-height: 150%;
+  text-align: center;
 }
 
 p {
@@ -339,12 +344,6 @@ nav.mobile{display: none;}
     padding: 50px 0px;
 }
 
-.footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  padding: 50px 0px;
-}
 
 .screenshot div{
   cursor: zoom-in;
@@ -527,3 +526,66 @@ nav.mobile{display: none;}
     color: #5dadc9;
 }
 
+.social-menu {
+	display: flex;
+	list-style-type: none;
+}
+ 
+.social-menu {
+	display: flex;
+	list-style-type: none;
+ 
+}
+ 
+.footer {
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.social-menu i {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 10px;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+  
+}
+
+.social-menu i:before {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.social-menu a {
+	text-decoration: none;
+}
+
+.fa-facebook {
+	background:#3b5998
+} 
+
+.fa-linkedin {
+	background:#007bb6
+}
+
+.fa-twitter {
+	background:#00aced
+}
+
+.fa-instagram {
+	background:#3f729b
+}
+
+.fa-youtube {
+	background:#c4302b
+}
+
+.social-menu i:hover {
+	opacity: .7;
+	border-radius: 0;
+}
